@@ -1,6 +1,6 @@
 //
 //  TalkingData.h
-//  TalkingData Version 1.0.14
+//  TalkingData Version 1.2.61
 //
 //  Created by Biao Hou on 11-11-14.
 //  Copyright (c) 2011年 tendcloud. All rights reserved.
@@ -18,12 +18,6 @@
     @param 	channelId(可选) 	渠道名，如“app store”
  */
 + (void)sessionStarted:(NSString *)appKey withChannelId:(NSString *)channelId;
-
-/**  
- @method openDebugLog:
- @param isOpen 是否打开调试日志
- */
-+(void)openDebugLog:(BOOL) isOpen;
 /**  
  @method getDeviceID
  获取TalkingData所使用的DeviceID
@@ -34,8 +28,8 @@
 /**
  *	@method	setExceptionReportEnabled
  *  是否捕捉程序崩溃记录 (可选)
- *	@param 	enable 	默认是YES
-    如果需要自行记录程序崩溃日志，请将值设成NO，并且在调用sessionStarted:withChannelId:之前调用此函数
+ *	@param 	enable 	默认是 NO
+    如果需要记录程序崩溃日志，请将值设成YES，并且在调用sessionStarted:withChannelId:之前调用此函数
  */ 
 + (void)setExceptionReportEnabled:(BOOL)enable;
 
