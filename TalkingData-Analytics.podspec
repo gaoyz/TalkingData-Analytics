@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name = 'TalkingData-Analytics'
-  s.version = '1.2.0'
+  s.version = '1.2.72'
   s.license = 'Commercial'
   s.summary = 'TalkingData analytics SDK for iOS.'
   s.homepage = 'https://www.talkingdata.net/'
   s.author = { 'TalkingData-Analytics' => 'https://github.com/gaoyz/TalkingData-Analytics' }
-  s.source = { :git => 'https://github.com/gaoyz/TalkingData-Analytics.git', :tag => '1.2.0' }
+  s.source = { :git => 'https://github.com/gaoyz/TalkingData-Analytics.git', :tag => s.version.to_s }
   s.description = 'TalkingData analytics SDK for iOS.'
   s.platform = :ios
   s.source_files = '*.h'
