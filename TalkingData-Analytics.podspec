@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.preserve_paths = '*.a'
   s.libraries = 'TalkingData', 'z'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/TalkingData-Analytics"' }
-  s.weak_frameworks = 'AdSupport'
+  s.weak_frameworks = 'AdSupport','CoreMotion'
   s.frameworks = 'Security', 'CoreTelephony'
 end
