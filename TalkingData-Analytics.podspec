@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'TalkingData-Analytics'
-  s.version = '2.0.7'
+  s.version = '2.2.24'
   s.license = 'Commercial'
   s.summary = 'TalkingData analytics SDK for iOS.'
   s.homepage = 'https://www.talkingdata.net/'
@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.libraries = 'TalkingData', 'z'
   s.xcconfig = { 'LIBRARY_SEARCH_PATHS' => '"$(SRCROOT)/Pods/TalkingData-Analytics"' }
   s.weak_frameworks = 'AdSupport','CoreMotion'
-  s.frameworks = 'Security', 'CoreTelephony'
+  s.frameworks = 'Security', 'CoreTelephony', 'SystemConfiguration'
 end
